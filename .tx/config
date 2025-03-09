@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[o:bbcoin:p:bbcoin:r:qt-translation-029x]
+file_filter = src/qt/locale/bbcoin_<lang>.xlf
+source_file = src/qt/locale/bbcoin_en.xlf
+source_lang = en

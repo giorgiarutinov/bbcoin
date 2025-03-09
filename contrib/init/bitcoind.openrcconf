@@ -1,0 +1,33 @@
+# /etc/conf.d/bbcoind: config file for /etc/init.d/bbcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bbcoin/bbcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bbcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bbcoind.pid"
+
+# Where to write bbcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bbcoind"
+
+# User and group to own bbcoind process
+#BITCOIND_USER="bbcoin"
+#BITCOIND_GROUP="bbcoin"
+
+# Path to bbcoind executable
+#BITCOIND_BIN="/usr/bin/bbcoind"
+
+# Nice value to run bbcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bbcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=600
